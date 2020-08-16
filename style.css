@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Sniglet&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: #F7D6BF;
+    height: 400px;
+    padding: 0 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero header {
+    align-self: flex-start;
+    font-size: 0.8rem;
+    font-family: 'Sniglet', cursive;
+}
+
+main {
+    background-color: #B0CAC7;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 2em 0;
+}
+
+.receiver,  .message-box {
+    width: 90%;
+    color: #F7D6BF;
+    font-size: 1.2rem;
+    padding: 1em .5em;
+    border: none;
+    border-radius: 10px;
+    background-color: #005086;
+}
+.receiver {
+    margin: 1em 0;
+}
+.receiver::placeholder,  .message-box::placeholder {
+    color: #F7D6BF;
+    opacity: 0.7;
+}
+.btn-send {
+    background-color: #F7D6BF;
+    color: #005086;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0.5em 3em;
+    margin-top: 1.5em;
+}
+.btn-send:hover {
+    background-color: #ffe3cd;
+}
+
