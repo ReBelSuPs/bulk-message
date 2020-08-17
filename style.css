@@ -16,14 +16,14 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 .hero {
     background-color: #F7D6BF;
-    height: 400px;
+    height: 45vh;
     padding: 0 1.5em;
     display: flex;
     flex-direction: column;
@@ -39,10 +39,12 @@ body {
 
 main {
     background-color: #B0CAC7;
-    height: 450px;
+    height: 55vh;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
     padding: 2em 0;
 }
 
@@ -75,4 +77,3 @@ main {
 .btn-send:hover {
     background-color: #ffe3cd;
 }
-

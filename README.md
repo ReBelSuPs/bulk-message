@@ -1,1 +1,1 @@
-#bulk-message
+This is an app for sending message to phone number
