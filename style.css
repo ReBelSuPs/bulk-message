@@ -9,6 +9,16 @@ html {
     box-sizing: inherit;
 }
 
+:root {
+    /* --primary-color: #F7D6BF;
+    --secondary-color: #005086;
+    --extra-color: #B0CAC7; */
+    --primary-color: #e1ffc2;
+    --secondary-color: #092532;
+    --extra-color: #89c9b8; 
+    --color1: #c7e2b2;    
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -22,51 +32,59 @@ body {
 }
 
 .hero {
-    background-color: #F7D6BF;
-    height: 45vh;
+    background-color: var(--primary-color);
+    height: 55vh;
     padding: 0 1.5em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .hero header {
     align-self: flex-start;
     font-size: 0.8rem;
+    margin-bottom: 6em;
     font-family: 'Sniglet', cursive;
 }
 
 main {
-    background-color: #B0CAC7;
+    background-color: var(--extra-color);
     height: 55vh;
-    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    padding: 2em 0;
+    padding-bottom: 2em;
+    padding-top: 5.5em;
 }
 
 .receiver,  .message-box {
     width: 90%;
-    color: #F7D6BF;
+    color: var(--primary-color);
     font-size: 1.2rem;
     padding: 1em .5em;
     border: none;
     border-radius: 10px;
-    background-color: #005086;
+    background-color: var(--secondary-color);
 }
 .receiver {
     margin: 1em 0;
 }
 .receiver::placeholder,  .message-box::placeholder {
-    color: #F7D6BF;
-    opacity: 0.7;
+    color: var(--primary-color);
+    opacity: 0.6;
 }
 .btn-send {
-    background-color: #F7D6BF;
-    color: #005086;
+    background-color: var(--color1);
+    color: var(--secondary-color);
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -75,5 +93,5 @@ main {
     margin-top: 1.5em;
 }
 .btn-send:hover {
-    background-color: #ffe3cd;
+    background-color: var(--primary-color);
 }
